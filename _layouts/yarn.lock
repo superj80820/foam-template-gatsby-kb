@@ -1236,6 +1236,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5":
+  version "7.15.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
+  integrity sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.14.8", "@babel/runtime@^7.15.3":
   version "7.15.3"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.15.3.tgz#2e1c2880ca118e5b2f9988322bd8a7656a32502b"
@@ -2423,7 +2430,7 @@ arg@^5.0.1:
   resolved "https://registry.npmjs.org/arg/-/arg-5.0.1.tgz#eb0c9a8f77786cad2af8ff2b862899842d7b6adb"
   integrity sha512-e0hDa9H2Z9AwFkk2qDlwhoMYE4eToKarchkQHovNdLTCYMHZHeRjI71crOh+dio4K6u1IcwubQqo79Ga4CyAQA==
 
-argparse@^1.0.7:
+argparse@^1.0.10, argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
   integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
@@ -2554,6 +2561,13 @@ atob@^2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
+
+autolinker@^3.11.0:
+  version "3.14.3"
+  resolved "https://registry.yarnpkg.com/autolinker/-/autolinker-3.14.3.tgz#c61c424bc6077bcf2fc62803803ec2f58e15a7ec"
+  integrity sha512-t81i2bCpS+s+5FIhatoww9DmpjhbdiimuU9ATEuLxtZMQ7jLv9fyFn7SWNG8IkEfD4AmYyirL1ss9k1aqVWRvg==
+  dependencies:
+    tslib "^1.9.3"
 
 autoprefixer@^10.2.4:
   version "10.2.5"
@@ -3416,7 +3430,7 @@ command-exists@^1.2.4:
   resolved "https://registry.npmjs.org/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
   integrity sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==
 
-commander@2, commander@^2.20.0, commander@^2.20.3:
+commander@2, commander@^2.19.0, commander@^2.20.0, commander@^2.20.3:
   version "2.20.3"
   resolved "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -5955,6 +5969,15 @@ gatsby-remark-double-parenthesis-link@^0.1.5:
     slugify "^1.5.3"
     unist-util-visit "^2.0.0"
 
+gatsby-remark-markmap@^0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-markmap/-/gatsby-remark-markmap-0.3.7.tgz#1f71bdefe8dbd73c79ea5b1c1294d45e1c43eb4c"
+  integrity sha512-wxQHEfLanLreKZde+ZUE2UcLYehnzbVGOJqS5a8PZDn6IX5Cvl+CCf32srig3eNxQd2fwhWhWszras6ZqBMlcw==
+  dependencies:
+    lodash.debounce "^4.0.8"
+    markmap-lib "^0.11.2"
+    unist-util-visit "^2.0.3"
+
 gatsby-remark-prismjs@^5.10.0:
   version "5.10.0"
   resolved "https://registry.npmjs.org/gatsby-remark-prismjs/-/gatsby-remark-prismjs-5.10.0.tgz#e92d9022d40cc12e8031393dd453a1d847eb9dc4"
@@ -7691,6 +7714,13 @@ kapsule@^1.13.4:
   dependencies:
     debounce "^1.2.1"
 
+katex@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.12.0.tgz#2fb1c665dbd2b043edcf8a1f5c555f46beaa0cb9"
+  integrity sha512-y+8btoc/CK70XqcHqjxiGWBOeIL8upbS0peTPXTvgrh21n1RiWWcIpSWM+4uXq+IAgNh9YYQWdc7LVDPDAEEAg==
+  dependencies:
+    commander "^2.19.0"
+
 katex@^0.13.0:
   version "0.13.17"
   resolved "https://registry.npmjs.org/katex/-/katex-0.13.17.tgz#1f1e3d6e0f29e6bc685829d86452ea31b0c68255"
@@ -8107,6 +8137,25 @@ markdown-table@^2.0.0:
   integrity sha512-Ezda85ToJUBhM6WGaG6veasyym+Tbs3cMAw/ZhOPqXiYsr0jgocBV3j3nx+4lk47plLlIqjwuTm/ywVI+zjJ/A==
   dependencies:
     repeat-string "^1.0.0"
+
+markmap-common@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/markmap-common/-/markmap-common-0.1.5.tgz#f48e7abac5790c72d5ab55429a214acbe1670922"
+  integrity sha512-bZj02doiGrPvllN25Pfm3msj/dkZy6oVFmgoG0Hldui7TRLJqI1vfbIqbXag7wTviuNeGLKtyrMqSdEMGa5+NA==
+  dependencies:
+    "@babel/runtime" "^7.12.1"
+
+markmap-lib@^0.11.2:
+  version "0.11.6"
+  resolved "https://registry.yarnpkg.com/markmap-lib/-/markmap-lib-0.11.6.tgz#f57883f9b70350ead94ed2d56926166b6d7ab2ef"
+  integrity sha512-9CnLt/vZzNgW3kO/wqldhinKBbK/h8WUx5GGVjdn2JTs/DrDcZZbvAyVmke3VG+mnWwYHsnjLVIiCbPi5PaepA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    katex "^0.12.0"
+    markmap-common "^0.1.5"
+    prismjs "^1.21.0"
+    remarkable "^2.0.0"
+    remarkable-katex "^1.1.6"
 
 md5-file@^5.0.0:
   version "5.0.0"
@@ -9605,6 +9654,11 @@ prism-themes@^1.8.0:
   resolved "https://registry.npmjs.org/prism-themes/-/prism-themes-1.8.0.tgz#4f7b108552f75d39bf5c9556e5b5e17e912dd0d0"
   integrity sha512-pj7A7C9C8juQRFkZHYeApQHdUiak5nkKYlHyWwh7n/b6WjI9KzGtqaGhxUZAIaV1PZ9Z1epJwe41Px3TUGsNJw==
 
+prismjs@^1.21.0:
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.25.0.tgz#6f822df1bdad965734b310b315a23315cf999756"
+  integrity sha512-WCjJHl1KEWbnkQom1+SzftbtXMKQoezOCYs5rECqMN+jP+apI7ftoflyqigqzopSO3hMhTEb0mFClA8lkolgEg==
+
 prismjs@^1.24.1:
   version "1.24.1"
   resolved "https://registry.npmjs.org/prismjs/-/prismjs-1.24.1.tgz#c4d7895c4d6500289482fa8936d9cdd192684036"
@@ -10281,6 +10335,19 @@ remark@^10.0.1:
     remark-parse "^6.0.0"
     remark-stringify "^6.0.0"
     unified "^7.0.0"
+
+remarkable-katex@^1.1.6:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/remarkable-katex/-/remarkable-katex-1.1.8.tgz#ace896c841314b3fe1ee1a4025f566d02a92c3de"
+  integrity sha512-NdzPcO2ybt9TsLx/I5wwb2CIpG3LhLc8GhYzfpG50FryTok5ZJrgBo3iroW20hen0eZx1bhZkatxSo7+wBBJlQ==
+
+remarkable@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/remarkable/-/remarkable-2.0.1.tgz#280ae6627384dfb13d98ee3995627ca550a12f31"
+  integrity sha512-YJyMcOH5lrR+kZdmB0aJJ4+93bEojRZ1HGDn9Eagu6ibg7aVZhc3OWbbShRid+Q5eAfsEqWxpe+g5W5nYNfNiA==
+  dependencies:
+    argparse "^1.0.10"
+    autolinker "^3.11.0"
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
@@ -11569,7 +11636,7 @@ tsconfig-paths@^3.11.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.14.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
