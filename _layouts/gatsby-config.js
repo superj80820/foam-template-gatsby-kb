@@ -13,17 +13,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          // Note that `gatsby-remark-markmap` must be put before other plugins
-          // that handle code blocks, e.g. `gatsby-remark-prismjs`
-          "gatsby-remark-markmap",
-          "gatsby-remark-prismjs",
-        ],
-      },
-    },
-    {
       resolve: `gatsby-theme-kb`,
       options: {
         rootNote: "/readme",
@@ -72,6 +61,17 @@ module.exports = {
         source: path.resolve(__dirname, `../assets`),
         destination: "/assets",
         purge: false,
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          // Note that `gatsby-remark-markmap` must be put before other plugins
+          // that handle code blocks, e.g. `gatsby-remark-prismjs`
+          "gatsby-remark-markmap",
+          "gatsby-remark-prismjs",
+        ],
       },
     },
   ],
