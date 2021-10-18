@@ -1,4 +1,4 @@
-# Foam
+# Foam test
 
 👋 Welcome to your new Foam Workspace!
 
@@ -9,9 +9,9 @@ This documentation assumes that you have a GitHub account and have [Visual Studi
 1. If you haven't yet, browse over to the main [Foam documentation workspace](https://foambubble.github.io/foam) to get an idea of what Foam is and how to use it.
 2. Press "Use this template" button at [foam-template-gatsby-kb](https://github.com/hikerpig/foam-template-gatsby-kb) (that's this repository!) to fork it to your own GitHub account. If you want to keep your thoughts to yourself, remember to set the repository private.
 3. [Clone the repository to your local machine](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) and open it in VS Code.
-    *Open the repository as a folder using the `File > Open...` menu item. In VS Code, "open workspace" refers to [multi-root workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces).*
+   _Open the repository as a folder using the `File > Open...` menu item. In VS Code, "open workspace" refers to [multi-root workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces)._
 4. When prompted to install recommended extensions, click **Install all** (or **Show Recommendations** if you want to review and install them one by one)
-5. Open [_layouts/gatsby-config.js](_layouts/gatsby-config.js) and edit the `pathPrefix` to be the name of the repository.
+5. Open [\_layouts/gatsby-config.js](_layouts/gatsby-config.js) and edit the `pathPrefix` to be the name of the repository.
 
 After setting up the repository, open [.vscode/settings.json](.vscode/settings.json) and edit, add or remove any settings you'd like for your Foam workspace.
 
@@ -24,9 +24,9 @@ Check the `_layouts/gatsby-config.js` file, and there is some configs you should
 Check the repo for [latest gatsby-config.js](https://github.com/hikerpig/foam-template-gatsby-kb/blob/master/_layouts/gatsby-config.js).
 
 ```js
-const path = require('path')
+const path = require("path");
 
-const PATH_PREFIX = process.env.PATH_PREFIX
+const PATH_PREFIX = process.env.PATH_PREFIX;
 
 module.exports = {
   pathPrefix: PATH_PREFIX || `/`, // b. If you are using Netlify/Vercel, your can keep it this way
@@ -40,14 +40,14 @@ module.exports = {
     {
       resolve: `gatsby-theme-kb`,
       options: {
-        rootNote: '/readme',
+        rootNote: "/readme",
         contentPath: `${__dirname}/..`,
         ignore: [
-          '**/_layouts/**',
-          '**/.git/**',
-          '**/.github/**',
-          '**/.vscode/**',
-          '**/.cache/**',
+          "**/_layouts/**",
+          "**/.git/**",
+          "**/.github/**",
+          "**/.vscode/**",
+          "**/.cache/**",
         ],
         // this is an option for extending `gatsby-plugin-mdx` options inside `gatsby-theme-kb`,
         getPluginMdx(defaultPluginMdx) {
@@ -55,23 +55,24 @@ module.exports = {
           defaultPluginMdx.options.gatsbyRemarkPlugins.push({
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              ignoreFileExtensions: ['md', 'mdx'],
+              ignoreFileExtensions: ["md", "mdx"],
             },
-          })
+          });
 
           // an example of syntax highlighting
           defaultPluginMdx.options.gatsbyRemarkPlugins.push({
-            resolve: 'gatsby-remark-prismjs',
+            resolve: "gatsby-remark-prismjs",
             options: {
               noInlineHighlight: true,
             },
-          })
+          });
 
           // add math support
-          defaultPluginMdx.options.remarkPlugins.push(require('remark-math'))
-          if (!defaultPluginMdx.options.rehypePlugins) defaultPluginMdx.options.rehypePlugins = []
-          defaultPluginMdx.options.rehypePlugins.push(require('rehype-katex'))
-          return defaultPluginMdx
+          defaultPluginMdx.options.remarkPlugins.push(require("remark-math"));
+          if (!defaultPluginMdx.options.rehypePlugins)
+            defaultPluginMdx.options.rehypePlugins = [];
+          defaultPluginMdx.options.rehypePlugins.push(require("rehype-katex"));
+          return defaultPluginMdx;
         },
       },
     },
@@ -80,15 +81,15 @@ module.exports = {
       //   but of course you need to reference them by absolute path, e.g. '/assets/img.png'.
       // if you have multiple directories, copy this plugin section and specify other directory
       // check https://github.com/csath/gatsby-plugin-copy-files-enhanced to find docs for this plugin
-      resolve: 'gatsby-plugin-copy-files-enhanced',
+      resolve: "gatsby-plugin-copy-files-enhanced",
       options: {
         source: path.resolve(__dirname, `../assets`),
-        destination: '/assets',
+        destination: "/assets",
         purge: false,
       },
     },
   ],
-}
+};
 ```
 
 ### About Syntax highlight
@@ -109,7 +110,7 @@ Check the [demo of this repo](https://foam-template-gatsby-kb.vercel.app/) in Ve
 
 Goto [New Project](https://vercel.com/new) page of Vercel, import your own repo in github (after connecting your github to Vercel, of course).
 
-1. While configuring the site, select `_layouts`  as your source code directory.
+1. While configuring the site, select `_layouts` as your source code directory.
 
 ![](https://i.loli.net/2021/01/28/pMxdXwuYGzF5LDg.png)
 
@@ -117,13 +118,13 @@ Goto [New Project](https://vercel.com/new) page of Vercel, import your own repo 
 
 ![](https://i.loli.net/2021/01/28/Ccw4a9l8zeJxDXt.png)
 
-Then  click the 'Deploy' button of the form, you will see Vercel building and deploying your site.
+Then click the 'Deploy' button of the form, you will see Vercel building and deploying your site.
 
 #### Option 2. To Github Pages
 
 At first you need to enable GitHub Pages in your repo's settings, set `gh-pages` branch as source.
 
-And once you push the `master` branch, github actions will build the site and add generated files to `gh-pages` branch. The action workflow config is located in `.github/workflows/Deploy.yml`. It comes with you when you fork this repository, if you don't need it or want to get rid  the `gh-pages` noise, just delete the file.
+And once you push the `master` branch, github actions will build the site and add generated files to `gh-pages` branch. The action workflow config is located in `.github/workflows/Deploy.yml`. It comes with you when you fork this repository, if you don't need it or want to get rid the `gh-pages` noise, just delete the file.
 
 After the building is done, you can visit your site in `https://{yourname}.github.io/{your-repo-name}/`, e.g. [https://hikerpig.github.io/foam-template-gatsby-kb/](https://hikerpig.github.io/foam-template-gatsby-kb/).
 
