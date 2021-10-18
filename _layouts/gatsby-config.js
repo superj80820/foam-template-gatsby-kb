@@ -52,6 +52,17 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          // Note that `gatsby-remark-markmap` must be put before other plugins
+          // that handle code blocks, e.g. `gatsby-remark-prismjs`
+          "gatsby-remark-markmap",
+          "gatsby-remark-prismjs",
+        ],
+      },
+    },
+    {
       // this plugin makes sure your static files will be served by gatsby,
       //   but of course you need to reference them by absolute path, e.g. '/assets/img.png'.
       // if you have multiple directories, copy this plugin section and specify other directory
@@ -61,17 +72,6 @@ module.exports = {
         source: path.resolve(__dirname, `../assets`),
         destination: "/assets",
         purge: false,
-      },
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          // Note that `gatsby-remark-markmap` must be put before other plugins
-          // that handle code blocks, e.g. `gatsby-remark-prismjs`
-          "gatsby-remark-markmap",
-          "gatsby-remark-prismjs",
-        ],
       },
     },
   ],
