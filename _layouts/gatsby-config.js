@@ -13,6 +13,17 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          // Note that `gatsby-remark-markmap` must be put before other plugins
+          // that handle code blocks, e.g. `gatsby-remark-prismjs`
+          "gatsby-remark-markmap",
+          "gatsby-remark-prismjs",
+        ],
+      },
+    },
+    {
       resolve: `gatsby-theme-kb`,
       options: {
         rootNote: "/readme",
@@ -49,17 +60,6 @@ module.exports = {
           defaultPluginMdx.options.rehypePlugins.push(require("rehype-katex"));
           return defaultPluginMdx;
         },
-      },
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          // Note that `gatsby-remark-markmap` must be put before other plugins
-          // that handle code blocks, e.g. `gatsby-remark-prismjs`
-          "gatsby-remark-markmap",
-          "gatsby-remark-prismjs",
-        ],
       },
     },
     {
