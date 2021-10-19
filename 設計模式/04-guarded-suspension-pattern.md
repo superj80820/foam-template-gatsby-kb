@@ -1,3 +1,5 @@
+# Guarded Suspension Pattern，你不會死的，因為我會保護你
+
 ## 什麼是 Guarded Suspension Pattern？
 
 > 如果 thread 執行時條件不符，就停下等待，等到條件符合時再開始開始執行

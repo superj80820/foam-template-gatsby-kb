@@ -1,3 +1,5 @@
+# Read-Write-Lock Pattern，三人成虎，一人打虎！
+
 ## 什麼是 Read-Write-Lock Pattern？
 
 > 多讀單寫。將 lock 分為 read 與 write 兩種，讓 lock 效能更佳，read 行為不會改變資料，所以 read lock 時可以再同時 read，達到「多讀」，而 write 行為會改變資料，所以 write lock 不能再同時 read 與 write 時，達到「單寫」

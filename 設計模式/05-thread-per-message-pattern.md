@@ -1,3 +1,5 @@
+# Thread-Per-Message Pattern，預備...發射！
+
 在 DAY 2~DAY 4 我們使用到了 goroutine、lock、channel，主要目標在**保護**併發下的資料避免 race condition，接下來會以提高執行**效率**為討論重點。
 
 ## 什麼是 Thread-Per-Message Pattern？
