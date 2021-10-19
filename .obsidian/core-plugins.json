@@ -4,11 +4,17 @@
   "switcher",
   "graph",
   "backlink",
+  "outgoing-link",
+  "tag-pane",
   "page-preview",
+  "daily-notes",
   "note-composer",
   "command-palette",
   "markdown-importer",
   "word-count",
+  "slides",
   "open-with-default-app",
-  "file-recovery"
+  "file-recovery",
+  "publish",
+  "sync"
 ]

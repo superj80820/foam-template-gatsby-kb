@@ -1,0 +1,10 @@
+{
+  "commitMessage": "vault backup: {{date}}",
+  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "autoSaveInterval": 30,
+  "autoPullOnBoot": false,
+  "disablePush": false,
+  "disablePopups": false,
+  "currentBranch": "master",
+  "remote": "origin"
+}
