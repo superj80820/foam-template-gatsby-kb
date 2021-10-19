@@ -8,6 +8,8 @@
 
 [[ga-ba]]
 
+[[ga-ba-測試]]
+
 - QA
 
   - robot framework
