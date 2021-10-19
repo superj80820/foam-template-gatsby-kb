@@ -1,14 +1,120 @@
 # 喜歡解決問題的髒桶子
 
-```markmap
-# Food
-## Fruits
-- easy to eat
-  - apple
-  - banana
-- not so easy
-  - grapes
-## Vegetables
-- cabbage
-- tomato
-```
+- QA
+
+  - robot framework
+  - selenium
+
+- 管理
+
+  - 面試
+
+- backend
+
+  - containerized
+
+    - k8s
+    - service mesh
+
+      - istio
+      - linkerd
+
+    - docker
+
+  - cicd
+
+    - jenkins
+
+  - javascript
+  - python
+  - golang
+
+    - goroutine
+    - lock
+
+  - db
+
+    - lock
+    - index
+    - partition
+    - 分表分庫
+
+  - message queue
+
+    - kafka
+    - rabbitMQ
+    - redis
+
+- concurrency
+
+  - cache
+
+    - redis
+
+  - lock
+
+    - 樂觀鎖
+
+      - 互斥鎖
+
+        - 死鎖
+        - 活鎖
+
+    - 悲觀鎖
+    - 分散式鎖
+
+  - design pattern
+
+    - Concurrency 併發模式: 如何讓程式高併發，並足夠安全，不產生 race condition、dead lock 等問題
+
+      - [[02：Single Threaded Execution Pattern，門就只有一個大家好好排隊啊～]]
+      - [03：Read-Write-Lock Pattern，三人成虎，一人打虎！](https://ithelp.ithome.com.tw/articles/10265460)
+      - [04：Guarded Suspension Pattern，你不會死的，因為我會保護你](https://ithelp.ithome.com.tw/articles/10266278)
+      - [05：Thread-Per-Message Pattern，預備...發射！](https://ithelp.ithome.com.tw/articles/10267174)
+      - [06：Feature Pattern，我把未來託付給你了！](https://ithelp.ithome.com.tw/articles/10267843)
+      - [07：Fan-Out Fan-In Pattern，看吧世界！這就是多人解決的力量！](https://ithelp.ithome.com.tw/articles/10268715)
+      - [08：Producer Consumer Pattern，點菜了，三份穿褲子的豬，一盤熱空氣，把牛變成鱒魚](https://ithelp.ithome.com.tw/articles/10269446)
+      - [09：Worker Pool Pattern，就。很。Pool。](https://ithelp.ithome.com.tw/articles/10270015)
+      - [10：Two-phase Termination Pattern，我就跟你說不要亂拔電源！](https://ithelp.ithome.com.tw/articles/10270786)
+      - [11：Thread-Specific Storage Pattern，高併發的多重宇宙空間](https://ithelp.ithome.com.tw/articles/10271558)
+      - [12：Concurrency Patterns 融會貫通＋ Graceful Shutdown，正確關閉各個宇宙的次元門](https://ithelp.ithome.com.tw/articles/10272236)
+
+    - Creational 建立模式: 如何有效的生產與管理物件
+
+      - Abstract Factory
+      - Builder
+      - Factory Method
+      - Prototype
+      - Singleton
+
+    - Structural 結構模式: 如何設計出低耦合的物件關係
+
+      - Adapter
+      - Bridge
+      - Composite
+      - Decorator
+      - Facade
+      - Flyweight
+      - Proxy
+
+    - Behavioral 行為模式: 如何讓物件互動的更彈性、有效率，職責更清晰
+
+      - Chain of Responsibility
+      - Command
+      - Interpreter
+      - Iterator
+      - Mediator
+      - Memento
+      - Observer
+      - State
+      - Strategy
+      - Template Methodbehavior.
+      - Visitor
+
+- 交易所
+
+  - 掛買賣單
+
+    - post only
+
+- 區塊鏈
