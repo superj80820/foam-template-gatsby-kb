@@ -1,7 +1,7 @@
 {
   "fileSortOrder": "alphabetical",
   "obsidianCss": false,
-  "alwaysUpdateLinks": false,
+  "alwaysUpdateLinks": true,
   "promptDelete": false,
   "pdfExportSettings": {
     "pageSize": "Letter",

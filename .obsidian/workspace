@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "0574a83346211035",
+        "id": "5bdee44277e85371",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -115,52 +115,40 @@
             }
           },
           {
-            "id": "9a405c5e0bdef672",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "readme.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "ebfd6c8717a4f153",
+            "id": "84054edb68096a6e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
                 "file": "readme.md",
-                "collapseAll": true,
-                "extraContext": true,
+                "collapseAll": false,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 511.5
+    "width": 455.5
   },
-  "active": "0574a83346211035",
+  "active": "5bdee44277e85371",
   "lastOpenFiles": [
     "readme.md",
-    "_layouts/node_modules/yurnalist/CHANGELOG.md",
-    "_layouts/node_modules/yargs-parser/CHANGELOG.md",
-    "設計模式/01-introduction.md",
+    "設計模式/UML-class-diagrams.md",
     "設計模式/00-readme.md",
-    "設計模式/Proxy Pattern，讓代理人操作實際的物件.md",
-    "設計模式/Flyweight Pattern，節省空間的好幫手.md",
-    "設計模式/Decorator Pattern，巧妙的在方法上增加新功能.md",
-    "設計模式/Facade Pattern，由統一的入口介面來做事.md",
-    "設計模式/Composite Pattern，管理有層次的物件們.md"
+    "UML-class-diagrams.md",
+    "設計模式/13-UML-class-diagrams.md",
+    "self-cards/readme.md",
+    "設計模式/04-guarded-suspension-pattern.md",
+    "設計模式/24-composite-pattern.md",
+    "_layouts/node_modules/yurnalist/CHANGELOG.md",
+    "_layouts/node_modules/yargs-parser/CHANGELOG.md"
   ]
 }

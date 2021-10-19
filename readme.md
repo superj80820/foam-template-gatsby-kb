@@ -115,6 +115,11 @@
 
 - 區塊鏈
 
+    - solana
+    - eth
+    - ada
+    - btc
+
 - 雜談
 
     - [[01-evangelion-終-心得]]
