@@ -6,6 +6,8 @@
 
 [[02Single Threaded Execution Pattern門就只有一個大家好好排隊啊]]
 
+[[ga-ba]]
+
 - QA
 
   - robot framework
