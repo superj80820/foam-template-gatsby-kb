@@ -1,3 +1,5 @@
+# 02：Single Threaded Execution Pattern，門就只有一個大家好好排隊啊～
+
 ## 什麼是 Single Threaded Execution Pattern？
 
 > 透過 lock，只會有一個 goroutine 執行此區段的程式碼
