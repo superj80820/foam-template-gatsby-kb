@@ -1,4 +1,4 @@
-# Hey! Go Design Patterns
+# Hey！Go Design Patterns
 
 ![](https://i.imgur.com/P87VC4O.png)
 
