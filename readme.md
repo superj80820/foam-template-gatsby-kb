@@ -11,9 +11,16 @@
 
 - backend
 
+    - 壓測
+
+        - [[k6]]
+
     - containerized
 
         - k8s
+        - event source
+        - Grofana
+        - Elastecsearch
         - service mesh
 
             - istio
@@ -45,28 +52,28 @@
         - rabbitMQ
         - redis
 
-- concurrency
+    - concurrency
 
-    - cache
+        - cache
 
-        - redis
+            - redis
+                - 反向索引
 
-    - lock
+        - lock
 
-        - 樂觀鎖
+            - 樂觀鎖
 
-            - 互斥鎖
+                - 互斥鎖
 
-                - 死鎖
-                - 活鎖
+                    - 死鎖
+                    - 活鎖
 
-        - 悲觀鎖
-        - 分散式鎖
+            - 悲觀鎖
+            - 分散式鎖
 
     - design pattern
 
         - [[13-UML-class-diagrams]]
-
         - Concurrency 併發模式: 如何讓程式高併發，並足夠安全，不產生 race condition、dead lock 等問題
 
             - [[02-single-threaded-execution-pattern]]
@@ -109,16 +116,43 @@
 
 - 交易所
 
+    - 配息, 除息交易日
+    - [[止盈, 止損]], 做空, 做多
+    - 融資：投資人向券商借錢買股票
+    - 多頭（牛市）, 空頭（熊市）
+    - 盤整
+    - 回
+    - 平台
+
+        - [[bito]]
+
     - 掛買賣單
 
         - post only
+        - OCO
+        - 限價停損
+        - [[全部成交、部分成交]]
+        - [[撮合]]
+        - [[交割]]
 
 - 區塊鏈
 
-    - solana
-    - eth
-    - ada
-    - btc
+    - 隨機性
+
+	    - [[self-cards/整理/vrf]]
+	    - [[chainlink]]
+
+    - 交易協定
+
+        - utxo
+        - account base
+
+    - 幣種
+
+        - solana
+        - eth
+        - ada
+        - btc
 
 - 雜談
 
